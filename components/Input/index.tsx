@@ -7,6 +7,7 @@ interface InputProps {
     autoCapitalize?: 'none' | 'sentences' | 'words' | 'characters';
     autoCorrect?: boolean;
     placeholder?: string;
+    value?: string;
     onChangeText?: (text: string) => void;
     type?: 'text' | 'password'; // Add type property here
 }

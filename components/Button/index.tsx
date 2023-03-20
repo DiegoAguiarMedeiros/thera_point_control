@@ -10,7 +10,7 @@ interface ButtonProps extends TouchableOpacityProps {
 const Button: React.FC<ButtonProps> = ({ text, styleButton, active, onPress, ...rest }) => {
     const colorScheme = useColorScheme();
     return (
-        <Styled.Button active={active} styleButton={styleButton} onPress={() => onPress}>
+        <Styled.Button active={active} styleButton={styleButton} onPress={onPress}>
             <Styled.TextButton active={active}>{text}</Styled.TextButton>
         </Styled.Button>
     );
